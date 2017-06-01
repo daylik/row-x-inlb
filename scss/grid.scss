@@ -9,30 +9,24 @@
 @include cols_gutter(2, 0.8);  //row-x2g col [col-1, col-2]
 //@include cols(12);
 
-.full{ padding:0; margin:0; width:100%;
-	text-align: justify;
-	display: block; 
-	text-justify: newspaper; 
-	zoom:1; 
-	text-align-last: justify; 
-	position: relative;
+.full{ padding:0; margin:0; width:100%; text-align: justify; display: block;  text-justify: newspaper;  zoom:1;  text-align-last: justify;  position: relative; }
+.full .col{ //display : inline;
+ //zoom : 1;
+ text-align: left; text-align-last: left; text-justify: left;
 }
-.full .col{
-		//display : inline;
-		//zoom : 1;
-		text-align: left;
-		text-align-last: left;
-		text-justify: left;
-}
-.full .col.text-right{
-		text-align: right;
-		text-align-last: right;
-		text-justify: right;
-}
+.full .col.text-right{ text-align: right; text-align-last: right; text-justify: right; }
+.full .col.text-center{ text-align: center; text-align-last: center; text-justify: center; }
 .full:before{ width:100%; content: ''; display: block; }
-.full:after { width: 100%;
-		height: 0px;
-		visibility: hidden;
-		content: '';
-		display: inline-block;
-}
+.full:after { width: 100%; height: 0px; visibility: hidden; content: ''; display: inline-block; }
+.full:before{ width:100%; content: ''; display: block; }
+.full:after { width: 100%; height: 0px; visibility: hidden; content: ''; display: inline-block; }
+
+body .v-middle .col{vertical-align: middle;}
+body .v-top .col{ vertical-align: top;}
+body .v-bottom .col{ vertical-align: bottom;}
+body .v-baseline .col{ vertical-align: baseline;}
+
+body .col.v-top{ vertical-align: top;}
+body .col.v-middle{ vertical-align: middle;}
+body .col.v-bottom{ vertical-align: bottom;}
+body .col.v-baseline{ vertical-align: baseline;}
