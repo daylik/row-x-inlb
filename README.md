@@ -8,22 +8,18 @@
 ## use in html:  
 ### x12 grid
 <code>
-```
-<div class="row-x12g">
+```<div class="row-x12g">
 	<div class="col col-3"> 1/4 </div>
 	<div class="col col-3"> 1/4 </div>
 	<div class="col col-3"> 1/4 </div>
 	<div class="col col-3"> 1/4 </div>
-</div>
-```
+</div>```
 </code>
 
 ### x2 grid
 <code>
-```
-<div class="row-x2g">
+```<div class="row-x2g">
 	<div class="col col-1"> 1/2 </div>
 	<div class="col col-1"> 1/2 </div>
-</div>
-```
+</div>```
 </code>
