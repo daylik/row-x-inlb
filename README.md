@@ -40,6 +40,15 @@
 	<!-- div.col.col-3 -->
 </div>
 ```
+```html
+<span class="row-x12 row-full v-middle">
+	<a href="#" class="col col-3"> 1/4 </a>
+	<a href="#" class="col col-3 text-right"> 1/4 </a>
+	<a href="#" class="col col-3"> 1/4 </a>
+	<!-- lost a.col.col-3 -->
+</span>
+```
+
 
 ### x2 grid
 
