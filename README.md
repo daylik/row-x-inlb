@@ -2,7 +2,7 @@
 
 ## SCSS usage:
 ```css
-@import "./scss/mixins.scss";
+@import "./row_x_inlb_mixin.scss";
 ```
 
 ### Syntax info
