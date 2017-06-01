@@ -2,8 +2,8 @@
 ## use in scss: 
   @import "./scss/mixins.scss"; 
   
-###//### sintax info ### 
-// @include cols_gutter([number: cols], [number: margin-left and margin-right]);
+### sintax info 
+#### // @include cols_gutter([number: cols], [number: margin-left and margin-right]);
 
   @include cols_gutter(12, 0.8); //row-x12g col [col-1 ... col-12]
   
