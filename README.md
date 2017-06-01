@@ -1,17 +1,19 @@
 # row-x-inlb: css inline-block grid system
-## use in scss: 
-  @import "./scss/mixins.scss"; 
-  
-### sintax info 
-#### // @include cols_gutter([number: cols], [number: margin-left and margin-right]);
 
-  @include cols_gutter(12, 0.8); //row-x12g col [col-1 ... col-12]
-  
-  @include cols_gutter(24, 0.2);
-  
-  @include cols_gutter(2, 0.8);  //row-x2g col [col-1, col-2]
+## SCSS usage:
+```css
+@import "./scss/mixins.scss";
+```
 
-## use in html:  
+### Syntax info
+```css
+// @include cols_gutter([number: cols], [number: margin-left and margin-right]);
+@include cols_gutter(12, 0.8); //row-x12g col [col-1 ... col-12]
+@include cols_gutter(24, 0.2);
+@include cols_gutter(2, 0.8);  //row-x2g col [col-1, col-2]
+```
+
+## HTML usage:
 ### x12 grid
 ```html
 <div class="row-x12">
