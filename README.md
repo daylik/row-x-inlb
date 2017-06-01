@@ -1,6 +1,6 @@
 # row-x-inlb: css inline-block grid system
 ## use in scss: 
-  @import "./scss/mixins.scss"; 
+  @import "./row_x_inlb_mixin.scss";
   
 ### sintax info 
 #### // @include cols_gutter([number: cols], [number: margin-left and margin-right]);
