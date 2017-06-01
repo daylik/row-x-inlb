@@ -9,15 +9,22 @@
 @include cols_gutter(2, 0.8);  //row-x2g col [col-1, col-2]
 //@include cols(12);
 
-.full{ padding:0; margin:0; width:100%; text-align: justify; display: block;  text-justify: newspaper;  zoom:1;  text-align-last: justify;  position: relative; }
-.full .col{ //display : inline;
+
+.row-right{ text-align: right;}
+.row-right .col{ text-align: left;}
+
+.row-full{ padding:0; margin:0; width:100%; text-align: justify; display: block;  text-justify: newspaper;  zoom:1;  text-align-last: justify;  position: relative; }
+.row-full .col{ //display : inline;
  //zoom : 1;
  text-align: left; text-align-last: left; text-justify: left;
 }
-.full .col.text-right{ text-align: right; text-align-last: right; text-justify: right; }
-.full .col.text-center{ text-align: center; text-align-last: center; text-justify: center; }
-.full:before{ width: 100%; content: ''; display: block; }
-.full:after { width: 100%; height: 0px; visibility: hidden; content: ''; display: inline-block; }
+.col.text-right,
+.row-full .col.text-right{ text-align: right; text-align-last: right; text-justify: right; }
+.col.text-center,
+.row-full .col.text-center{ text-align: center; text-align-last: center; text-justify: center; }
+.row-full:before{ width: 100%; content: ''; display: block; }
+.row-full:after { width: 100%; height: 0px; visibility: hidden; content: ''; display: inline-block; }
+
 
 body .v-middle .col{vertical-align: middle;}
 body .v-top .col{ vertical-align: top;}
