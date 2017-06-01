@@ -6,6 +6,7 @@
 	vertical-align: top;
 }
 
+$font_size: 14px;
 
 @mixin cols_gutter($num, $gutter){
 	/* rows x#{$num} */
@@ -67,7 +68,10 @@
 				}
 			}
 		}
+		
+		&.row-full{ width: 100% + ($gutter * 2); }
+		&.row-full:before{ width: 100% + ($gutter * 2); }
+		&.row-full:after { width: 100% + ($gutter * 2); }
 	}
-	
 	
 }
