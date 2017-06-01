@@ -7,19 +7,29 @@
 
 ## use in html:  
 ### x12 grid
-<code>
-```<div class="row-x12g">
+```html
+<div class="row-x12">
 	<div class="col col-3"> 1/4 </div>
 	<div class="col col-3"> 1/4 </div>
 	<div class="col col-3"> 1/4 </div>
 	<div class="col col-3"> 1/4 </div>
-</div>```
-</code>
+</div>
+```
+
+```html
+<div class="row-x12 full">
+	<div class="col col-3"> 1/4 </div>
+	<div class="col col-3 text-right"> 1/4 </div>
+	<div class="col col-3"> 1/4 </div>
+	<!-- div.col.col-3 -->
+</div>
+```
 
 ### x2 grid
-<code>
-```<div class="row-x2g">
+
+```html
+<div class="row-x2">
 	<div class="col col-1"> 1/2 </div>
 	<div class="col col-1"> 1/2 </div>
-</div>```
-</code>
+</div>
+```
