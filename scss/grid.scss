@@ -10,6 +10,10 @@
 //@include cols(12);
 
 
+
+.row-center{ text-align: center;}
+.row-center .col{ text-align: left;}
+
 .row-right{ text-align: right;}
 .row-right .col{ text-align: left;}
 
@@ -28,7 +32,6 @@
 .row-full:before{ content: ''; display: block; }
 .row-full:after { height: 0px; visibility: hidden; content: ''; display: inline-block; }
 
-
 body .v-middle .col{vertical-align: middle;}
 body .v-top .col{ vertical-align: top;}
 body .v-bottom .col{ vertical-align: bottom;}
@@ -38,3 +41,4 @@ body .col.v-top{ vertical-align: top;}
 body .col.v-middle{ vertical-align: middle;}
 body .col.v-bottom{ vertical-align: bottom;}
 body .col.v-baseline{ vertical-align: baseline;}
+
