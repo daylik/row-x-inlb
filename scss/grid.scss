@@ -32,8 +32,8 @@
 .row-full:before{ content: ''; display: block; }
 .row-full:after { height: 0px; visibility: hidden; content: ''; display: inline-block; }
 
-body .v-middle .col{vertical-align: middle;}
 body .v-top .col{ vertical-align: top;}
+body .v-middle .col{vertical-align: middle;}
 body .v-bottom .col{ vertical-align: bottom;}
 body .v-baseline .col{ vertical-align: baseline;}
 
