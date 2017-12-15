@@ -1,0 +1,308 @@
+.container-x12 {
+  margin-left: 0.3%;
+  margin-right: 0.3%;
+}
+.row-x12 {
+  font-size: 0;
+  line-height: 2;
+  line-height: 0;
+  margin-left: -0.3%;
+  margin-right: -0.3%;
+  width: 100.6%;
+}
+.row-x12 .col {
+  display: -moz-inline-box;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  margin-left: 0.3%;
+  margin-right: 0.3%;
+  margin-bottom: 10.3px;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 16px;
+}
+.row-x12 .col:before,
+.row-x12 .col::after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.row-x12 .col-1 {
+  width: 7.733333333333334%;
+  *width: 7.633333333333335%;
+}
+.row-x12 .col-2 {
+  width: 16.066666666666666%;
+  *width: 15.966666666666667%;
+}
+.row-x12 .col-3 {
+  width: 24.4%;
+  *width: 24.299999999999997%;
+}
+.row-x12 .col-4 {
+  width: 32.733333333333334%;
+  *width: 32.63333333333333%;
+}
+.row-x12 .col-5 {
+  width: 41.06666666666667%;
+  *width: 40.96666666666667%;
+}
+.row-x12 .col-6 {
+  width: 49.4%;
+  *width: 49.3%;
+}
+.row-x12 .col-7 {
+  width: 57.733333333333334%;
+  *width: 57.63333333333333%;
+}
+.row-x12 .col-8 {
+  width: 66.06666666666668%;
+  *width: 65.96666666666668%;
+}
+.row-x12 .col-9 {
+  width: 74.4%;
+  *width: 74.30000000000001%;
+}
+.row-x12 .col-10 {
+  width: 82.73333333333335%;
+  *width: 82.63333333333335%;
+}
+.row-x12 .col-11 {
+  width: 91.06666666666668%;
+  *width: 90.96666666666668%;
+}
+.row-x12 .col-12 {
+  width: 99.4%;
+  *width: 99.30000000000001%;
+}
+@media screen and (max-width: 1200px) {
+  .row-x12 .col-1 {
+    width: 7.733333333333334%;
+    *width: 7.633333333333335%;
+  }
+  .row-x12 .col-2 {
+    width: 16.066666666666666%;
+    *width: 15.966666666666667%;
+  }
+  .row-x12 .col-3 {
+    width: 24.4%;
+    *width: 24.299999999999997%;
+  }
+  .row-x12 .col-4 {
+    width: 32.733333333333334%;
+    *width: 32.63333333333333%;
+  }
+  .row-x12 .col-5 {
+    width: 41.06666666666667%;
+    *width: 40.96666666666667%;
+  }
+  .row-x12 .col-6 {
+    width: 49.4%;
+    *width: 49.3%;
+  }
+  .row-x12 .col-7 {
+    width: 57.733333333333334%;
+    *width: 57.63333333333333%;
+  }
+  .row-x12 .col-8 {
+    width: 66.06666666666668%;
+    *width: 65.96666666666668%;
+  }
+  .row-x12 .col-9 {
+    width: 74.4%;
+    *width: 74.30000000000001%;
+  }
+  .row-x12 .col-10 {
+    width: 82.73333333333335%;
+    *width: 82.63333333333335%;
+  }
+  .row-x12 .col-11 {
+    width: 91.06666666666668%;
+    *width: 90.96666666666668%;
+  }
+  .row-x12 .col-12 {
+    width: 99.4%;
+    *width: 99.30000000000001%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row-x12 .col-sm-1 {
+    width: 7.733333333333334%;
+    *width: 7.633333333333335%;
+  }
+  .row-x12 .col-sm-2 {
+    width: 16.066666666666666%;
+    *width: 15.966666666666667%;
+  }
+  .row-x12 .col-sm-3 {
+    width: 24.4%;
+    *width: 24.299999999999997%;
+  }
+  .row-x12 .col-sm-4 {
+    width: 32.733333333333334%;
+    *width: 32.63333333333333%;
+  }
+  .row-x12 .col-sm-5 {
+    width: 41.06666666666667%;
+    *width: 40.96666666666667%;
+  }
+  .row-x12 .col-sm-6 {
+    width: 49.4%;
+    *width: 49.3%;
+  }
+  .row-x12 .col-sm-7 {
+    width: 57.733333333333334%;
+    *width: 57.63333333333333%;
+  }
+  .row-x12 .col-sm-8 {
+    width: 66.06666666666668%;
+    *width: 65.96666666666668%;
+  }
+  .row-x12 .col-sm-9 {
+    width: 74.4%;
+    *width: 74.30000000000001%;
+  }
+  .row-x12 .col-sm-10 {
+    width: 82.73333333333335%;
+    *width: 82.63333333333335%;
+  }
+  .row-x12 .col-sm-11 {
+    width: 91.06666666666668%;
+    *width: 90.96666666666668%;
+  }
+  .row-x12 .col-sm-12 {
+    width: 99.4%;
+    *width: 99.30000000000001%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row-x12 .col-xs-1 {
+    width: 7.733333333333334%;
+    *width: 7.633333333333335%;
+  }
+  .row-x12 .col-xs-2 {
+    width: 16.066666666666666%;
+    *width: 15.966666666666667%;
+  }
+  .row-x12 .col-xs-3 {
+    width: 24.4%;
+    *width: 24.299999999999997%;
+  }
+  .row-x12 .col-xs-4 {
+    width: 32.733333333333334%;
+    *width: 32.63333333333333%;
+  }
+  .row-x12 .col-xs-5 {
+    width: 41.06666666666667%;
+    *width: 40.96666666666667%;
+  }
+  .row-x12 .col-xs-6 {
+    width: 49.4%;
+    *width: 49.3%;
+  }
+  .row-x12 .col-xs-7 {
+    width: 57.733333333333334%;
+    *width: 57.63333333333333%;
+  }
+  .row-x12 .col-xs-8 {
+    width: 66.06666666666668%;
+    *width: 65.96666666666668%;
+  }
+  .row-x12 .col-xs-9 {
+    width: 74.4%;
+    *width: 74.30000000000001%;
+  }
+  .row-x12 .col-xs-10 {
+    width: 82.73333333333335%;
+    *width: 82.63333333333335%;
+  }
+  .row-x12 .col-xs-11 {
+    width: 91.06666666666668%;
+    *width: 90.96666666666668%;
+  }
+  .row-x12 .col-xs-12 {
+    width: 99.4%;
+    *width: 99.30000000000001%;
+  }
+}
+.row-x12.row-full,
+.row-x12:before,
+.row-x12:after {
+  width: 100.6%;
+}
+.container-x2 {
+  margin-left: 0.3%;
+  margin-right: 0.3%;
+}
+.row-x2 {
+  font-size: 0;
+  line-height: 2;
+  line-height: 0;
+  margin-left: -0.3%;
+  margin-right: -0.3%;
+  width: 100.6%;
+}
+.row-x2 .col {
+  display: -moz-inline-box;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  margin-left: 0.3%;
+  margin-right: 0.3%;
+  margin-bottom: 10.3px;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 16px;
+}
+.row-x2 .col:before,
+.row-x2 .col::after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.row-x2 .col-1 {
+  width: 49.4%;
+  *width: 49.3%;
+}
+.row-x2 .col-2 {
+  width: 99.4%;
+  *width: 99.30000000000001%;
+}
+@media screen and (max-width: 1200px) {
+  .row-x2 .col-1 {
+    width: 49.4%;
+    *width: 49.3%;
+  }
+  .row-x2 .col-2 {
+    width: 99.4%;
+    *width: 99.30000000000001%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .row-x2 .col-sm-1 {
+    width: 49.4%;
+    *width: 49.3%;
+  }
+  .row-x2 .col-sm-2 {
+    width: 99.4%;
+    *width: 99.30000000000001%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row-x2 .col-xs-1 {
+    width: 49.4%;
+    *width: 49.3%;
+  }
+  .row-x2 .col-xs-2 {
+    width: 99.4%;
+    *width: 99.30000000000001%;
+  }
+}
+.row-x2.row-full,
+.row-x2:before,
+.row-x2:after {
+  width: 100.6%;
+}

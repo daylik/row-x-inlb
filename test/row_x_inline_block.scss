@@ -1,0 +1,166 @@
+//@include https://github.com/daylik/row-x-inlb/blob/master/scss/row_x_inlb_mixin.scss
+
+@mixin inline_block(){
+	display: -moz-inline-box; 
+	display:inline-block; 
+	zoom:1; 
+	*display:inline; 
+	vertical-align: top;
+}
+
+$font_size: 14px;
+
+@mixin cols_gutter($num, $gutter){
+	/* rows x#{$num} */
+	$w_one: 100% / $num;
+
+	.container-x#{$num}{margin: 0 $gutter; }
+
+	.row-x#{$num}{
+		font-size:0;
+		line-height:0;
+		margin-left: 0% - $gutter;
+		margin-right: 0% - $gutter;
+		width: 100% + ($gutter * 2);
+
+		$m_bottom_gutter: $gutter + 10px;
+
+		.col{
+			@include inline_block();
+			margin-left: $gutter + 0%;
+			margin-right: $gutter + 0%;
+			margin-bottom: $m_bottom_gutter;
+
+			font-size: $font_size;
+			line-height: $font_size + 2;
+
+			&::before, 
+			&::after{
+			-webkit-box-sizing: content-box;
+		   	 -moz-box-sizing: content-box;
+			    	  box-sizing: content-box;
+			}
+		}
+
+		@for $i from 1 through $num {
+			.col-#{$i} {
+				width: $w_one * $i - ($gutter * 2);
+				*width: $w_one * $i - 0.1 - ($gutter * 2);
+			}
+		}
+    /* media-sizes */
+		@media screen and (max-width: 768px){
+			@for $i from 1 through $num {
+				.col-#{$i} {
+					width: $w_one * $num - ($gutter * 2);
+					*width: $w_one * $num  - 0.1 - ($gutter * 2);
+				}
+			}
+		}
+		@media screen and (max-width: 992px){
+			@for $i from 1 through $num {
+				.col-sm-#{$i} {
+					width: $w_one * $i - ($gutter * 2);
+					*width: $w_one * $i - 0.1 - ($gutter * 2);
+				}
+			}
+		}
+		@media screen and (max-width: 768px){
+			@for $i from 1 through $num {
+				.col-xs-#{$i} {
+					width: $w_one * $i - ($gutter * 2);
+					*width: $w_one * $i - 0.1 - ($gutter * 2);
+				}
+			}
+		}
+		
+		&.row-full{ width: 100% + ($gutter * 2); }
+		&.row-full:before{ width: 100% + ($gutter * 2); }
+		&.row-full:after { width: 100% + ($gutter * 2); }
+	}
+	
+}
+
+@include cols_gutter(12, 0.3);
+     //('column number', '%'); 
+//.row-x12 col [col-1 ... col-12]
+//@include cols_gutter(24, 0.2);
+@include cols_gutter(4, 0.3);  
+@include cols_gutter(2, 0.3); 
+//.row-x2 col [col-1, col-2]
+//@include cols(12);
+
+
+
+.row-center{ text-align: center;}
+.row-center .col{ text-align: left;}
+
+.row-right{ text-align: right;}
+.row-right .col{ text-align: left;}
+
+.row-full{ text-align: justify; display: block;  text-justify: newspaper;  zoom:1;  text-align-last: justify;  position: relative; }
+.row-full .col{ 
+ *display : inline;
+ *zoom : 1;
+ text-align: left; text-align-last: left; text-justify: left;
+}
+.col.text-right,
+.row-full .col.text-right{ text-align: right; text-align-last: right; text-justify: right; }
+
+.col.text-center,
+.row-full .col.text-center{ text-align: center; text-align-last: center; text-justify: center; }
+
+.row-full:before{ content: ''; display: block; }
+.row-full:after { height: 0px; visibility: hidden; content: ''; display: inline-block; }
+
+
+body .v-middle .col{vertical-align: middle;}
+body .v-top .col{ vertical-align: top;}
+body .v-bottom .col{ vertical-align: bottom;}
+body .v-baseline .col{ vertical-align: baseline;}
+
+body .col.v-top{ vertical-align: top;}
+body .col.v-middle{ vertical-align: middle;}
+body .col.v-bottom{ vertical-align: bottom;}
+body .col.v-baseline{ vertical-align: baseline;}
+
+
+html, 
+body{ padding: 0; margin: 0; }
+
+.text_info{ text-align: center; padding: 4px 0; font-size: 18px; line-height: 40px; font-family: Arial; color: #333;}
+
+.page { 
+  margin: 0 1%;
+  background: #f4f4f4; 
+}
+//DESING
+
+.col{ 
+  background: #ccc; 
+  padding: 10px 0; 
+  border-radius: 3px;
+  color: #000;
+}
+.col .col{ background: #f7f7f7;}
+.col .col .col{ background: #d7d7d7;}
+
+.row-x12:nth-child(1) .col{
+  background: #d70000 !important;
+  color: #fff;
+}
+.row-x12:nth-child(4) .col{
+  background: #728 !important;
+  color: #fff;
+  text-align: center;
+  text-align-last: center;
+}
+.row-x12:nth-child(5) .col{
+  background: #ff4 !important;
+}
+.row-x12:nth-child(6) .col{
+  background: #3f3 !important;
+}
+.row-x12:nth-child(7) .col{
+  background: #9f7 !important;
+}

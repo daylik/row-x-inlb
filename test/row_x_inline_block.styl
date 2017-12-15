@@ -1,0 +1,75 @@
+inline_block()
+	display -moz-inline-box
+	display inline-block
+	zoom 1
+	*display inline
+	vertical-align top
+
+font-size(n)
+	font-size n
+	line-height n + 2
+	
+cols_gutter(num, gutter)
+	// /* row x num */
+	font_size = 14px
+	w_one = 100% / num
+	m_bottom_gutter = gutter + 10px
+	gutter_2x = (gutter * 2)
+	
+	.container-x{num}
+		margin-left 0% + gutter
+		margin-right 0% + gutter
+			
+	.row-x{num}
+		font-size 0
+		line-height 0
+		margin-left 0% - gutter
+		margin-right 0% - gutter
+		width 100% + (gutter * 2)
+	
+		.col
+			inline_block()
+			margin-left gutter + 0%
+			margin-right gutter + 0%
+			margin-bottom m_bottom_gutter
+			font-size font_size
+			line-height font_size + 2
+			
+			&:before, 
+			&::after
+				-webkit-box-sizing content-box
+				-moz-box-sizing content-box
+				box-sizing content-box
+				
+		get_width(v)
+			width (w_one * v) - gutter_2x
+			*width (w_one * v) - 0.1 - gutter_2x
+					
+		for i in 1..num 
+			.col-{i}
+				get_width(i)
+		
+		@media screen and (max-width: 1200px)
+			for i in 1..num 
+				.col-{i}
+					get_width(i)
+		
+		@media screen and (max-width: 992px)
+			for i in 1..num 
+				.col-sm-{i}
+					get_width(i)
+		
+		@media screen and (max-width: 768px)
+			for i in 1..num 
+				.col-xs-{i}
+					get_width(i)
+						
+		&.row-full,
+		&:before,
+		&:after
+			width 100% + (gutter * 2)
+
+
+// function start
+cols_gutter(12, 0.3)
+cols_gutter(2, 0.3)

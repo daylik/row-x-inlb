@@ -1,0 +1,118 @@
+html, 
+body
+		padding 0
+		margin 0
+		
+	.row-full
+		text-align justify
+		display block
+		text-justify newspaper
+		zoom 1
+		text-align-last justify
+		position relative
+		&:before
+			content ''
+			display block
+		.col
+			*display inline
+			*zoom 1
+			text-align left
+			text-align-last left
+			text-justify left
+		&:after
+			height 0px
+			visibility hidden
+			content ''
+			display inline-block
+
+	.row-x12
+		&:nth-child(4)
+			.col
+				background #728 !important
+				color #fff
+				text-align center
+				text-align-last center
+		&:nth-child(5)
+			.col
+				background #ff4 !important
+		&:nth-child(6)
+			.col
+				background #3f3 !important
+		&:nth-child(7)
+			.col
+				background #9f7 !important
+		&:nth-child(1)
+			.col
+				background #d70000 !important
+				color #fff
+
+	//DESING
+		.col
+			background #ccc
+			padding 10px 0
+			border-radius 3px
+			color #000
+
+	.text_info
+		text-align center
+		padding 4px 0
+		font-size 18px
+		line-height 40px
+		font-family Arial
+		color #333
+
+	.col.text-right,
+	.row-full .col.text-right
+		text-align right
+		text-align-last right
+		text-justify right
+
+	.col.text-center,
+	.row-full .col.text-center
+		text-align center
+		text-align-last center
+		text-justify center
+
+	.row-right
+		text-align right
+		.col
+			text-align left
+
+	.row-center
+		text-align center
+		.col
+			text-align left
+
+	body
+		.col
+			&.v-top
+				vertical-align top
+			&.v-middle
+				vertical-align middle
+			&.v-baseline
+				vertical-align baseline
+			&.v-bottom
+				vertical-align bottom
+				
+		.v-middle
+			.col
+				vertical-align middle		
+		.v-top
+			.col
+				vertical-align top
+		.v-baseline
+			.col
+				vertical-align baseline
+		.v-bottom
+			.col
+				vertical-align bottom
+
+	.col
+		.col
+			background #f7f7f7
+			.col
+				background #d7d7d7
+
+	.page
+		margin 0 1%
+		background #f4f4f4
